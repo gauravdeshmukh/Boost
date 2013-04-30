@@ -1,4 +1,4 @@
-//Boost.Test for bernoulli.hpp
+//Boost.Test for bernoulli.hpp 
 
 #define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE BernoulliTest
