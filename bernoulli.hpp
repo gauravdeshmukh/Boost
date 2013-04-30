@@ -24,11 +24,10 @@ float_type bernoulli(int n)
 	for(int i=0;i<=n;i++)
 	{
 		arr[i]=cpp_rational(1,(i+1));	
-		//std::cout<<arr[i]<<'\n'	;
+		
 		for(int j=i;j>=1;j--)
 		{
-			arr[j-1] = (cpp_rational(j,1))*(arr[j-1]-arr[j]);			
-			//std::cout<<arr[i]<<'\n'	;
+			arr[j-1] = (cpp_rational(j,1))*(arr[j-1]-arr[j]);					
 		}
 	}
 	return static_cast<float_type>(arr[0]);
